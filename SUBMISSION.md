@@ -1,3 +1,56 @@
+<!-- generated-header v2 -->
+# SUBMISSION — curvex
+
+Paste-ready. Five fields, in the order the HackaLaunch form asks for them.
+Refreshed 2026-09-24T05:06:10+07:00.
+
+---
+
+## TITLE  (77/80 chars)
+
+```
+CurveX — a bonding curve where graduation is a milestone, not the finish line
+```
+
+## DESCRIPTION  (1414 chars)
+
+```
+CurveX is a multi-phase bonding curve for Solana where the curve advances itself.
+
+What it does: most launchpad curves are one price segment and one event — fill the curve, dump into a DEX, and whatever held holders together evaporates exactly when the token needs it most. CurveX replaces that with a four-phase ladder plus a terminal phase that keeps running after graduation.
+
+How it works: each phase is its own price segment with its own wallet cap, buy cooldown and fee schedule, and phases advance on on-chain state alone — no admin call, no keeper, no oracle. The transition triggers, the formulas, the caps and the fee table are written out in the README, and the CLI reads its constants from the same source as the program so it cannot drift from deployed code. The program is an on-chain Rust program built for sbpf-solana-solana and deployed with no upgrade authority.
+
+Real vs mocked: the program is real and was deployed and exercised end to end on a local validator — program id GRSUR1XnXMaiibEntNUQQyhVWLwDchHBwsY7iYZUuhLC, deployed with `none` as upgrade authority, byte-identical on a second build. 28 unit tests plus a slot-accurate simulation of the full phase ladder; SIM_NOTES.md records every number from a real run rather than an estimate. Devnet deploy steps are in RUN.md; nothing touches mainnet.
+
+How to run: `cargo test -p curvex --lib`, then the local-validator walkthrough in RUN.md.
+```
+
+## REPO URL
+
+```
+https://github.com/valeemlbb-cell/hackalaunch-curvex
+```
+
+## VIDEO URL
+
+```
+VIDEO_URL_PENDING
+```
+
+> The main session posts `demo_x.mp4` from this folder to X and replaces the
+> line above with the public post URL. The form needs a **link**; a file is useless.
+
+## SOLANA PAYOUT ADDRESS
+
+```
+7W31iaCmjerN1jkpEnmZevn74SZxv83yEQvLsnc4PS7Q
+```
+
+---
+
+## Appendix — earlier submission notes (kept verbatim)
+
 # Submission fields — curvex
 
 Paste-ready text for the HackaLaunch form. Replace `<VIDEO_URL>` once the demo
