@@ -1,0 +1,35 @@
+# --- secrets: nothing key-shaped ever enters this repo ---
+*keypair*.json
+*.key
+.env
+.env.*
+!.env.example
+
+# --- local validator ledgers (contain faucet/validator keypairs) ---
+# Every one of these holds real ed25519 secret keys for the throwaway chain.
+.test-ledger*/
+.probe-ledger*/
+.demo-ledger*/
+test-ledger*/
+
+# --- build output ---
+target/
+node_modules/
+dist/
+*.so
+
+# --- media kept on disk, linked from the README after upload ---
+demo.mp4
+demo_x.mp4
+frames/
+# Scratch for scripts/record-demo.mjs: captured CLI text, per-scene clips, mp3.
+demo/
+
+# --- internal coordination note, not part of the submission ---
+OWNERSHIP.md
+
+# --- editor / OS ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

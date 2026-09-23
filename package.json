@@ -1,0 +1,18 @@
+{
+  "name": "curvex",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "CurveX — multi-phase bonding curve on Solana",
+  "scripts": {
+    "cli": "node client/src/cli.ts",
+    "test": "node scripts/run-tests.mjs",
+    "test:only": "node --test client/tests/*.test.ts"
+  },
+  "dependencies": {
+    "@solana/spl-token": "^0.4.9",
+    "@solana/web3.js": "^1.95.4"
+  },
+  "engines": { "node": ">=22.18" }
+}
